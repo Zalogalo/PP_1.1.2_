@@ -67,6 +67,7 @@ public class UserDaoJDBCImpl implements UserDao {
         }
         return userList;
     }
+
     public void cleanUsersTable() {
         try {
             Statement statement = Util.getStatement();

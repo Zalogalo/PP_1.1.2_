@@ -12,24 +12,33 @@ public class UserDaoJDBCImpl implements UserDao {
 
     }
 
-    public void createUsersTable() throws Exception {
+    @Override
+    public void createUsersTable() {
         try (Statement statement = Util.getStatement();) {
-            statement.execute("CREATE TABLE IF NOT EXISTS users (id BIGINT NOT NULL AUTO_INCREMENT, name VARCHAR(45), lastName VARCHAR(45), age TINYINT, PRIMARY KEY (id));");
+            statement.execute("CREATE TABLE IF NOT EXISTS users (id BIGINT NOT NULL AUTO_INCREMENT," +
+                    "name VARCHAR(45)," +
+                    " lastName VARCHAR(45)," +
+                    " age TINYINT, PRIMARY KEY (id));");
+            System.out.println("Таблица создана");
         } catch (SQLException e) {
-            throw new Exception("Произошла ошибка при создании таблицы");
+            System.err.println("Таблица не создана");
+            e.printStackTrace();
         }
     }
 
     @Override
-    public void dropUsersTable() throws Exception {
-        try(Statement statement = Util.getStatement();) {
+    public void dropUsersTable() {
+        try (Statement statement = Util.getStatement();) {
             statement.execute("DROP TABLE IF EXISTS users;");
+            System.out.println("Таблица удалена");
         } catch (SQLException e) {
-            throw new Exception("Произошла ошибка при удалении таблицы");
+            System.err.println("Не удалось удалить таблицу");
+            e.printStackTrace();
         }
     }
 
-    public void saveUser(String name, String lastName, byte age) throws Exception {
+    @Override
+    public void saveUser(String name, String lastName, byte age) {
         String sql = "INSERT INTO users (name, lastName, age) VALUES (?, ?, ?)";
         try (Connection connection = Util.getConnection();
              PreparedStatement preparedStatement = connection.prepareStatement(sql)) {
@@ -37,25 +46,31 @@ public class UserDaoJDBCImpl implements UserDao {
             preparedStatement.setString(2, lastName);
             preparedStatement.setByte(3, age);
             preparedStatement.executeUpdate();
+            System.out.println("Пользователь с именем " + name + " добавлен в базу данных");
         } catch (SQLException e) {
-            throw new Exception("Произошла ошибка при сохранении пользователя");
+            System.err.println("Не удалось сохранить пользователя");
+            e.printStackTrace();
         }
     }
 
-    public void removeUserById(long id) throws Exception {
+    @Override
+    public void removeUserById(long id) {
         String sql = "DELETE FROM users WHERE id = ?";
         try (Connection connection = Util.getConnection();
              PreparedStatement preparedStatement = connection.prepareStatement(sql)) {
             preparedStatement.setLong(1, id);
             preparedStatement.executeUpdate();
+            System.out.println("Пользователь с ID: " + id + " удален из базы данных");
         } catch (SQLException e) {
-            throw new Exception("Произошла ошибка при удалении пользователя");
+            System.err.println("Не удалось удалить пользователя с ID: " + id);
+            e.printStackTrace();
         }
     }
 
-    public List<User> getAllUsers() throws Exception {
+    @Override
+    public List<User> getAllUsers() {
         List<User> userList = new ArrayList<>();
-        try(Statement statement = Util.getStatement();) {
+        try (Statement statement = Util.getStatement();) {
             ResultSet resultSet = statement.executeQuery("SELECT * FROM users");
             while (resultSet.next()) {
                 long id = resultSet.getLong("id");
@@ -63,19 +78,23 @@ public class UserDaoJDBCImpl implements UserDao {
                 String lastName = resultSet.getString("lastName");
                 byte age = resultSet.getByte("age");
                 userList.add(new User(name, lastName, age));
+                System.out.println("Пользователь с ID: " + id + " получен");
             }
         } catch (SQLException e) {
-            throw new Exception("Произошла ошибка при получении списка пользователей");
+            System.out.println("Не удалось получить список пользователей");
+            e.printStackTrace();
         }
         return userList;
     }
 
     @Override
-    public void cleanUsersTable() throws Exception {
-        try(Statement statement = Util.getStatement();) {
+    public void cleanUsersTable() {
+        try (Statement statement = Util.getStatement();) {
             statement.execute("DELETE from users");
+            System.out.println("Таблица очищена");
         } catch (SQLException e) {
-            throw new Exception("Произошла ошибка при очистке таблицы");
+            System.err.println("Не удалось очистить таблицу");
+            e.printStackTrace();
         }
     }
 }

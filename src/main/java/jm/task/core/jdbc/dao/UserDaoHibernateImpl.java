@@ -2,6 +2,7 @@ package jm.task.core.jdbc.dao;
 
 import jm.task.core.jdbc.model.User;
 
+import javax.transaction.Transaction;
 import java.util.List;
 
 public class UserDaoHibernateImpl implements UserDao {
@@ -11,6 +12,8 @@ public class UserDaoHibernateImpl implements UserDao {
 
     @Override
     public void createUsersTable() {
+        Transaction transaction = null;
+
 
     }
 

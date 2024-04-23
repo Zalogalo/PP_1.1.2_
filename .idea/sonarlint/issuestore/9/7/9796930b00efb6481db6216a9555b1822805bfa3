@@ -1,5 +1,15 @@
 
 }
-java:S1118":Add a private constructor to hide the implicit public one.(×¼­Æ8´¡ˆþî1J$1ef65867-f91a-4bf6-bfd9-270edd358c15
+java:S1118
+":Add a private constructor to hide the implicit public one.(×¼­Æ8ºò®Ïð1J$8df66c86-3d56-4bb4-96a2-8843f55d26fa
 x
-java:S6437"6Revoke and change this password, as it is compromised.(‡„Ï8è¿‰þî1J$ba0ad306-437e-4fe3-ba65-0cd00ad48cb1
+java:S6437"6Revoke and change this password, as it is compromised.(‡„Ï8Àò®Ïð1J$a50f2f2e-3a34-48ea-bec9-6e815f4fd04b
+ƒ	java:S125"<This block of commented-out lines of code should be removed.(äþÿŠýÿÿÿÿ8Æò®Ïð1J$a3b6ac7a-d626-4c88-9d73-90924649fe91
+
+java:S1128"9Remove this unused import 'jm.task.core.jdbc.model.User'.(õ„­³úÿÿÿÿ8Èò®Ïð1J$6e94d60f-4821-42ac-95e9-6a7296c3284e
+z
+java:S1128"2Remove this unused import 'org.hibernate.Session'.(È¹›§ùÿÿÿÿ8Èò®Ïð1J$82fac0f4-200a-47de-99b5-afcecb620b20
+
+java:S1128"9Remove this unused import 'org.hibernate.SessionFactory'.(ñ¦«¬þÿÿÿÿ8Éò®Ïð1J$5abed30e-8eae-4e52-b2fa-2970b39522c7
+
+java:S1128"<Remove this unused import 'org.hibernate.cfg.Configuration'.(ö¬ä8Éò®Ïð1J$5f6094b6-93df-43e9-b64b-a0be4d8f4ad0

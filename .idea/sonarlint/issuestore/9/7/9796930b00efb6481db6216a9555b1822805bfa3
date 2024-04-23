@@ -1,15 +1,22 @@
 
 }
-java:S1118
-":Add a private constructor to hide the implicit public one.(×¼­Æ8ºò®Ïð1J$8df66c86-3d56-4bb4-96a2-8843f55d26fa
-x
-java:S6437"6Revoke and change this password, as it is compromised.(‡„Ï8Àò®Ïð1J$a50f2f2e-3a34-48ea-bec9-6e815f4fd04b
-ƒ	java:S125"<This block of commented-out lines of code should be removed.(äþÿŠýÿÿÿÿ8Æò®Ïð1J$a3b6ac7a-d626-4c88-9d73-90924649fe91
-
-java:S1128"9Remove this unused import 'jm.task.core.jdbc.model.User'.(õ„­³úÿÿÿÿ8Èò®Ïð1J$6e94d60f-4821-42ac-95e9-6a7296c3284e
-z
-java:S1128"2Remove this unused import 'org.hibernate.Session'.(È¹›§ùÿÿÿÿ8Èò®Ïð1J$82fac0f4-200a-47de-99b5-afcecb620b20
-
-java:S1128"9Remove this unused import 'org.hibernate.SessionFactory'.(ñ¦«¬þÿÿÿÿ8Éò®Ïð1J$5abed30e-8eae-4e52-b2fa-2970b39522c7
-
-java:S1128"<Remove this unused import 'org.hibernate.cfg.Configuration'.(ö¬ä8Éò®Ïð1J$5f6094b6-93df-43e9-b64b-a0be4d8f4ad0
+java:S1118":Add a private constructor to hide the implicit public one.(×¼­Æ8âí±Òð1J$2bb3fd0f-6be9-4f13-bde3-e7cd4a64efaa
+ƒ	java:S125"<This block of commented-out lines of code should be removed.(Š„¼Àþÿÿÿÿ8æí±Òð1J$0d163c8c-d186-42ff-819d-8bf697928b2e
+’
+java:S3252""JUse static access with "org.hibernate.cfg.AvailableSettings" for "DRIVER".(Žÿûõûÿÿÿÿ8“î±Òð1J$840a355c-6ff4-4d57-8263-10a68a7d7f99
+Š
+java:S3252#"GUse static access with "org.hibernate.cfg.AvailableSettings" for "URL".(íëÀ„8”î±Òð1J$1e9a8ed7-0296-499f-a1a9-e42d17663629
+‹
+java:S3252$"HUse static access with "org.hibernate.cfg.AvailableSettings" for "USER".(ç¸©²8•î±Òð1J$ae23965f-12d2-4070-b0cd-70c266c08195
+Š
+java:S3252%"HUse static access with "org.hibernate.cfg.AvailableSettings" for "PASS".(¦ŠêG8•î±Òð1J$638d7906-51bd-4610-97d1-d802da1fb5b4
+Ž
+java:S3252&"KUse static access with "org.hibernate.cfg.AvailableSettings" for "DIALECT".(øŒÒÞ8–î±Òð1J$a4267932-7825-4343-836d-c3ccdab0798d
+©
+java:S3252'"aUse static access with "org.hibernate.cfg.AvailableSettings" for "CURRENT_SESSION_CONTEXT_CLASS".(Ä…×¢úÿÿÿÿ8–î±Òð1J$42cfde52-764a-42ba-af78-3d54a6c5b24a
+”
+java:S3252("LUse static access with "org.hibernate.cfg.AvailableSettings" for "SHOW_SQL".(ÌŸåøÿÿÿÿ8–î±Òð1J$7fab7fcb-4bc0-475a-9c84-94859dd33a1c
+˜
+java:S3252)"PUse static access with "org.hibernate.cfg.AvailableSettings" for "HBM2DDL_AUTO".(Îôà°ûÿÿÿÿ8—î±Òð1J$fa67916e-96ab-4eb8-8cde-c8be75a394ec
+€
+java:S1128"=Remove this unused import 'org.hibernate.HibernateException'.(™òý²8žî±Òð1J$0f12c9c2-1b34-4503-bad0-56d6bd7eaf11

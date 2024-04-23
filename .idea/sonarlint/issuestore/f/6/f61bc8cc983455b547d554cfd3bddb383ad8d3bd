@@ -1,15 +1,17 @@
 
-Ä
-java:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(¸Áş8¤‹°ğ1J$006eb416-2650-4a41-9522-5db092f9c478
 É
-java:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(õöÊ¸ÿÿÿÿÿ8¥‹°ğ1J$5fae5add-c400-4a56-9acf-a233c3b774d4
-Ä
-java:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(ÿ ¼Ş8¥‹°ğ1J$6f8cc88b-f007-4e48-a6c8-b44d92d67939
-É
-java:S1186)"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(«éæäıÿÿÿÿ8¥‹°ğ1J$82ac5caf-1aae-45fa-838b-696112eeb187
-É
-java:S1186	"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(âÚ­¬şÿÿÿÿ8¦‹°ğ1J$c5e7e19c-c14f-47c0-8757-2faa81d0c1ef
-s
-java:S1481"0Remove this unused "transaction" local variable.(šÙÿ¯8ë°ğ1J$282a7818-2a73-4a29-bd85-8c5d512c6b02
-n
-java:S1168%"+Return an empty collection instead of null.(¥¹ï8±‹°ğ1J$038101c8-beb4-4416-b843-30af140029de
+java:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(âÚ­¬şÿÿÿÿ8Ü­ÄÒğ1J$dda912e7-d33c-4535-aa5f-43bc7fd30433
+x
+java:S1481"0Remove this unused "transaction" local variable.(¹æ¢üÿÿÿÿ8¦ØÄÒğ1J$f73d6334-d555-4893-97a6-a7ef204f327c
+x
+java:S1481%"0Remove this unused "transaction" local variable.(¹æ¢üÿÿÿÿ8îïÄÒğ1J$657f9b96-a330-465f-be27-6ffbe9fbe2a7
+x
+java:S14812"0Remove this unused "transaction" local variable.(¹æ¢üÿÿÿÿ8«‡ÅÒğ1J$530da791-408a-4e61-bc25-f29c5d2f4534
+x
+java:S1481?"0Remove this unused "transaction" local variable.(¹æ¢üÿÿÿÿ8  ÅÒğ1J$d37b6045-6c76-46fa-8bc9-4d814581a6eb
+x
+java:S1481M"0Remove this unused "transaction" local variable.(¹æ¢üÿÿÿÿ8®ÚÅÒğ1J$3d3f1a5e-3116-4eb7-862b-4a48ebc07d0b
+x
+java:S1481["0Remove this unused "transaction" local variable.(¹æ¢üÿÿÿÿ8ø‚İÒğ1J$a6d9bd55-e0d8-4b19-8cb7-ad15cc852f46
+|
+java:S1128"9Remove this unused import 'org.hibernate.HibernateError'.(şñ’Ê8õ­ÄÒğ1J$a227e8d8-3f83-4a7f-a5e3-cc3ec59a9540
